@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="LoginForm" prefHeight="920.0" prefWidth="1254.0" style="-fx-background-color: linear-gradient(to bottom, #000cef, #4637e4, #6352d7, #786ac8, #8a81b8, #9884b7, #a487b5, #af8bb3, #cf72ab, #ee4f8b, #ff2056, #ff0000);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <Text layoutX="499.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register form">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="55.0" />
+         </font>
+      </Text>
+      <Separator layoutX="24.0" layoutY="39.0" prefHeight="0.0" prefWidth="462.0" />
+      <Separator layoutX="800.0" layoutY="41.0" prefHeight="3.0" prefWidth="439.0" />
+      <Text fill="#0a00ff" layoutX="94.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Details :" />
+      <Text layoutX="180.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name :" />
+      <Text layoutX="179.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name :" />
+      <Text fill="#0a00ff" layoutX="88.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Business Deatails :" />
+      <TextField fx:id="txtFirstName" layoutX="298.0" layoutY="123.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="692.0" />
+      <TextField fx:id="txtLastName" layoutX="298.0" layoutY="183.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="692.0" />
+      <TextField fx:id="txtNic" layoutX="298.0" layoutY="243.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="692.0" />
+      <TextField fx:id="txtPhoneNumber" layoutX="298.0" layoutY="307.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="692.0" />
+      <JFXComboBox fx:id="cmbUserType" layoutX="299.0" layoutY="484.0" prefHeight="31.0" prefWidth="257.0" promptText="Select type" />
+      <JFXPasswordField fx:id="txtConformedPassword" layoutX="298.0" layoutY="674.0" onKeyReleased="#jfxPasswordField_Key_Relesed" prefHeight="31.0" prefWidth="257.0" />
+      <JFXButton fx:id="btnSignIn" layoutX="427.0" layoutY="765.0" onAction="#allSignIn" prefHeight="45.0" prefWidth="400.0" style="-fx-background-color: #0652DD; -fx-background-radius: 10;" text="Sign In">
+         <font>
+            <Font name="Script MT Bold" size="23.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="180.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nic :" />
+      <Text layoutX="180.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" />
+      <Text layoutX="174.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Type :" />
+      <Text layoutX="173.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name :" />
+      <Text layoutX="108.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conformed Password :" />
+      <FontAwesomeIconView glyphName="UNDO" layoutX="13.0" layoutY="31.0" onMouseClicked="#goToDashBoardForm" size="30" />
+      <Text layoutX="178.0" layoutY="633.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" />
+      <JFXTextField fx:id="txtUserName" layoutX="298.0" layoutY="547.0" onKeyReleased="#jfxTextField_Key_Relesed" prefHeight="31.0" prefWidth="257.0" />
+      <JFXTextField fx:id="txtPassword" layoutX="298.0" layoutY="607.0" onKeyReleased="#jfxTextField_Key_Relesed" prefHeight="31.0" prefWidth="257.0" />
+   </children>
+</AnchorPane>

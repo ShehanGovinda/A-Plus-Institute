@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UserDashBoardForm" prefHeight="1017.0" prefWidth="1881.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserDashBoardFormController">
+    <BorderPane prefHeight="1017.0" prefWidth="1906.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <top>
+            <AnchorPane prefHeight="42.0" prefWidth="2000.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f4768" height="69.0" layoutX="383.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1531.0" />
+                    <JFXButton layoutX="1755.0" layoutY="14.0" onAction="#goToDashBord" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                        <font>
+                            <Font name="Bodoni MT" size="22.0" />
+                        </font>
+                    </JFXButton>
+                </children>
+            </AnchorPane>
+        </top>
+        <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#183a7a" height="1046.0" layoutY="-83.0" stroke="TRANSPARENT" strokeType="INSIDE" width="402.0" />
+                    <Label layoutX="98.0" layoutY="137.0" onMouseClicked="#goToDashBoardTwoForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="    Dash Board" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+                    <Label layoutX="104.0" layoutY="230.0" onMouseClicked="#goToStudentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Student" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+                    <Label layoutX="102.0" layoutY="331.0" onMouseClicked="#goToSubjectForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Subject" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+                    <Label layoutX="105.0" layoutY="440.0" onMouseClicked="#goToPaymentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Payment" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+                    <Label layoutX="97.0" layoutY="669.0" onMouseClicked="#goToAttendanceForm" prefHeight="50.0" prefWidth="291.0" style="-fx-background-color: #270F4D;" text="      Attendance" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+                    <Label layoutX="107.0" layoutY="559.0" onMouseClicked="#goToResultForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Results" textFill="WHITE">
+                        <font>
+                            <Font name="Bell MT" size="40.0" />
+                        </font>
+                        <cursor>
+                            <Cursor fx:constant="OPEN_HAND" />
+                        </cursor>
+                    </Label>
+               <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="41.0" layoutY="-24.0">
+                  <image>
+                     <Image url="@../Images/Logo1.png" />
+                  </image>
+               </ImageView>
+               <Text fill="WHITE" layoutX="155.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                  <font>
+                     <Font name="AdobeDevanagari-Bold" size="50.0" />
+                  </font>
+               </Text>
+               <Text fill="WHITE" layoutX="167.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="161.7568359375">
+                  <font>
+                     <Font name="AdobeDevanagari-Bold" size="45.0" />
+                  </font>
+               </Text>
+               <ImageView layoutX="40.0" layoutY="137.0">
+                  <image>
+                     <Image url="@../Images/outline_dashboard_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="35.0" layoutY="670.0">
+                  <image>
+                     <Image url="@../Images/outline_done_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="37.0" layoutY="438.0">
+                  <image>
+                     <Image url="@../Images/outline_request_quote_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="39.0" layoutY="561.0">
+                  <image>
+                     <Image url="@../Images/outline_assignment_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="39.0" layoutY="227.0">
+                  <image>
+                     <Image url="@../Images/outline_person_add_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="41.0" layoutY="331.0">
+                  <image>
+                     <Image url="@../Images/outline_import_contacts_black_24dp.png" />
+                  </image>
+               </ImageView>
+                </children></AnchorPane>
+        </left>
+      <center>
+         <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #515151, #5a5a5a, #646464, #6d6d6d, #777777, #7a7a7a, #7e7e7e, #818181, #7f7f7f, #7c7c7c, #7a7a7a, #787878);;" BorderPane.alignment="CENTER" />
+      </center>
+    </BorderPane>
+</AnchorPane>

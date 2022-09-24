@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UserDashBoardTwoForm" prefHeight="770.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserDashBoardTwoFormController">
+   <children>
+      <BorderPane prefHeight="1017.0" prefWidth="1929.0">
+         <top>
+            <AnchorPane prefHeight="63.0" prefWidth="1929.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f4768" height="69.0" layoutX="398.0" stroke="BLACK" strokeType="INSIDE" width="1531.0" />
+                  <JFXButton layoutX="1769.0" layoutY="13.0" onAction="#goToDashBord" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="973.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DASH BOARD">
+                     <font>
+                        <Font name="Microsoft Tai Le" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="970.0" prefWidth="1527.0" style="-fx-background-color: linear-gradient(to right, #5b595a, #676367, #736e74, #7d7a83, #868692, #868b97, #868f9b, #87949e, #839197, #818e91, #808a8a, #7f8685);;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="566.0" layoutY="621.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: WHITE;" text="Student Count :">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblStudentCount" layoutX="782.0" layoutY="593.0" prefHeight="22.0" prefWidth="162.0" style="-fx-border-color: WHITE;" text="12555">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="566.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: WHITE;" text="Teacher Count :">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblTeacherCount" layoutX="782.0" layoutY="652.0" prefHeight="22.0" prefWidth="162.0" style="-fx-border-color: WHITE;" text="12555">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="567.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-border-color: WHITE;" text="Subject Count :">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblSubjectCount" layoutX="783.0" layoutY="717.0" prefHeight="22.0" prefWidth="162.0" style="-fx-border-color: WHITE;" text="12555">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tblTeacherDetails" layoutX="380.0" layoutY="53.0" prefHeight="416.0" prefWidth="707.0" stylesheets="@../Styles/TableStyles.css">
+                    <columns>
+                      <TableColumn fx:id="colTeacher" prefWidth="340.33331298828125" text="Teacher" />
+                      <TableColumn fx:id="colSubject" prefWidth="363.66668701171875" text="Subject" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#183a7a" height="1046.0" layoutY="-83.0" stroke="BLACK" strokeType="INSIDE" width="402.0" />
+                  <Label layoutX="98.0" layoutY="137.0" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="230.0" onMouseClicked="#goToStudentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Student" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="102.0" layoutY="331.0" onMouseClicked="#goToSubjectForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Subject" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="440.0" onMouseClicked="#goToPaymentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Payment" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="669.0" onMouseClicked="#goToAttendanceForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Attendance" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="559.0" onMouseClicked="#goToResultForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Results" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="51.0" layoutY="-14.0">
+                     <image>
+                        <Image url="@../Images/Logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="165.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="177.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="161.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="40.0" layoutY="137.0">
+                     <image>
+                        <Image url="@../Images/outline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="35.0" layoutY="670.0">
+                     <image>
+                        <Image url="@../Images/outline_done_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="438.0">
+                     <image>
+                        <Image url="@../Images/outline_request_quote_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="561.0">
+                     <image>
+                        <Image url="@../Images/outline_assignment_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="227.0">
+                     <image>
+                        <Image url="@../Images/outline_person_add_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="41.0" layoutY="331.0">
+                     <image>
+                        <Image url="@../Images/outline_import_contacts_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

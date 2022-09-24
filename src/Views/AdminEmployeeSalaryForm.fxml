@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminEmployeeSalaryForm" prefHeight="1023.0" prefWidth="1868.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminEmployeeSalaryFormController">
+   <children>
+      <BorderPane prefHeight="1023.0" prefWidth="1928.0">
+         <top>
+            <AnchorPane prefHeight="48.0" prefWidth="1928.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e6368" height="69.0" layoutX="402.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1531.0" />
+                  <JFXButton layoutX="1791.0" layoutY="13.0" onAction="#goToDashBoardForm" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="880.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Details">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="53.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="977.0" prefWidth="1506.0" style="-fx-background-color: linear-gradient(to right top, #4f4f54, #6a6a70, #85878e, #a2a4ac, #c0c3cc, #bdc3cd, #bac3cd, #b6c3cd, #90a4ac, #6c858b, #4a686a, #2c4c49);" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnAdd" layoutX="1330.0" layoutY="186.0" onAction="#addEmployee" prefHeight="48.0" prefWidth="152.0" style="-fx-background-color: Blue;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXTextField fx:id="txtSalary" labelFloat="true" layoutX="35.0" layoutY="181.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="322.0" promptText="Salary">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="804.0" layoutY="59.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="409.0" promptText="Address">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="35.0" layoutY="120.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="322.0" promptText="Contact">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="805.0" layoutY="116.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="408.0" promptText="E - Mail">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFName" labelFloat="true" layoutX="35.0" layoutY="59.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="318.0" promptText="First Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtLName" labelFloat="true" layoutX="400.0" layoutY="58.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="363.0" promptText="Last Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtNic" labelFloat="true" layoutX="401.0" layoutY="118.0" onKeyReleased="#jfxTextField_Key_Release1" prefHeight="46.0" prefWidth="366.0" promptText="Nic">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text layoutX="36.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Employee">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="198.0" layoutY="26.0" prefHeight="3.0" prefWidth="1309.0" />
+                  <JFXTextField fx:id="txtNicSearch" labelFloat="true" layoutX="32.0" layoutY="289.0" onAction="#selectIdOnAction" prefHeight="46.0" prefWidth="349.0" promptText="  Search Nic Number" style="-fx-border-color: black; -fx-border-radius: 20;" unFocusColor="#4d4d4d00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtFName1" labelFloat="true" layoutX="40.0" layoutY="363.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="41.0" prefWidth="320.0" promptText="First Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtLName1" labelFloat="true" layoutX="396.0" layoutY="356.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="389.0" promptText="Last Name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtEmail1" labelFloat="true" layoutX="828.0" layoutY="426.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="410.0" promptText="E - Mail">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtNic1" labelFloat="true" layoutX="390.0" layoutY="426.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="395.0" promptText="Nic">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtContact1" labelFloat="true" layoutX="44.0" layoutY="425.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="316.0" promptText="Contact">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="txtAddress1" labelFloat="true" layoutX="826.0" layoutY="353.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="406.0" promptText="Address">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="btnUpdate" layoutX="1325.0" layoutY="486.0" onAction="#updateEmployee" prefHeight="48.0" prefWidth="159.0" style="-fx-background-color: blue;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="30.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Employees">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="251.0" layoutY="256.0" prefHeight="6.0" prefWidth="1255.0" />
+                  <JFXTextField fx:id="txtSalary1" labelFloat="true" layoutX="46.0" layoutY="505.0" onKeyReleased="#jfxTextField_Key_Release2" prefHeight="46.0" prefWidth="317.0" promptText="Salary">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label fx:id="lblEmpId1" layoutX="1338.0" layoutY="291.0" prefHeight="41.0" prefWidth="165.0" style="-fx-border-color: black;" text="  " textFill="RED">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="1236.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emp ID:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text fill="black" layoutX="30.0" layoutY="602.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Employees">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Separator layoutX="244.0" layoutY="594.0" prefHeight="1.0" prefWidth="1268.0" />
+                  <TableView fx:id="tblDelete" layoutX="32.0" layoutY="693.0" prefHeight="165.0" prefWidth="1485.0">
+                    <columns>
+                      <TableColumn fx:id="colFirstName" prefWidth="118.33331298828125" text="First Name" />
+                      <TableColumn fx:id="colLastName" prefWidth="151.66668701171875" text="Last Name" />
+                        <TableColumn fx:id="colNic" prefWidth="216.33331298828125" text="Nic" />
+                        <TableColumn fx:id="colContact" prefWidth="212.0" text="Contact" />
+                        <TableColumn fx:id="colEmail" prefWidth="321.0" text="E - Mail" />
+                        <TableColumn fx:id="colAddress" prefWidth="227.3333740234375" text="Address" />
+                        <TableColumn fx:id="colSalary" prefWidth="247.0" text="Salary" />
+                    </columns>
+                  </TableView>
+                  <JFXTextField fx:id="txtNicSearch1" labelFloat="true" layoutX="30.0" layoutY="627.0" onAction="#selectIdOnAction2" prefHeight="46.0" prefWidth="361.0" promptText="  Search Nic Number" style="-fx-border-color: black; -fx-border-radius: 50;" unFocusColor="#fafafa00">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton layoutX="1320.0" layoutY="872.0" onAction="#deleteEmployee" prefHeight="48.0" prefWidth="167.0" style="-fx-background-color: red; -fx-border-color: white;" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="lblEmpId2" layoutX="1337.0" layoutY="606.0" prefHeight="41.0" prefWidth="167.0" style="-fx-border-color: black;" text="  " textFill="RED">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="1235.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emp ID:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblEmpId" layoutX="1338.0" layoutY="34.0" prefHeight="41.0" prefWidth="161.0" style="-fx-border-color: black;" text=" " textFill="#ff0202">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="1236.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Emp ID:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="330.0" layoutY="291.0">
+                     <image>
+                        <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="340.0" layoutY="626.0">
+                     <image>
+                        <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4783" height="1046.0" layoutX="-7.0" layoutY="-76.0" stroke="TRANSPARENT" strokeType="INSIDE" width="419.0" />
+                  <Label layoutX="88.0" layoutY="264.0" onMouseClicked="#goToTeacher" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Teacher" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="364.0" prefHeight="50.0" prefWidth="279.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="      Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="167.0" onMouseClicked="#goToInformation" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView layoutX="26.0" layoutY="260.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="26.0" layoutY="168.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="28.0" layoutY="367.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="135.0" layoutY="-6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="134.0" fitWidth="107.0" layoutX="24.0" layoutY="-45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Untitled-1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="149.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="164.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

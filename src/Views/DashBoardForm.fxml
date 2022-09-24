@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="DashBoardForm" prefHeight="913.0" prefWidth="502.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
+   <children>
+      <Text layoutX="101.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Form" wrappingWidth="293.1611328125" AnchorPane.bottomAnchor="407.6943359375" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="107.8388671875" AnchorPane.topAnchor="429.4912109375">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="83.0" layoutY="579.0" onAction="#goToPassword" prefHeight="31.0" prefWidth="324.0" promptText="User Name" style="-fx-background-color: white;" />
+      <JFXPasswordField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" layoutX="83.0" layoutY="638.0" prefHeight="31.0" prefWidth="324.0" promptText="Password" style="-fx-background-color: white;" />
+      <Text layoutX="99.0" layoutY="711.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Not Register?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="CreateAccount" fill="#f8f8f8" layoutX="213.0" layoutY="711.0" onMouseClicked="#goToSignInForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Create an account!" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Text>
+      <Separator layoutX="107.0" layoutY="507.0" prefHeight="4.0" prefWidth="282.0" />
+      <Separator layoutX="107.0" layoutY="513.0" prefHeight="4.0" prefWidth="282.0" />
+      <JFXButton layoutX="71.0" layoutY="759.0" onAction="#goToAdminDashBordForm" prefHeight="38.0" prefWidth="355.0" style="-fx-background-color: blue;" text="Admin Login" textFill="Black">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="71.0" layoutY="829.0" onAction="#goToUserLoginForm" prefHeight="38.0" prefWidth="355.0" style="-fx-background-color: blue;" text="User Login" textFill="Black">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="389.0" fitWidth="401.0" layoutX="48.0" layoutY="20.0">
+         <image>
+            <Image url="@../Images/Aplus.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

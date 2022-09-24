@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminSettingFormController" prefHeight="770.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminSettingFormController">
+   <children>
+      <BorderPane prefHeight="1023.0" prefWidth="1876.0">
+         <top>
+            <AnchorPane prefHeight="64.0" prefWidth="1910.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#265f94" height="69.0" layoutX="379.0" stroke="BLACK" strokeType="INSIDE" width="1531.0" />
+                  <JFXButton layoutX="1777.0" layoutY="16.0" onAction="#goToDashBoardForm" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="1595.0" layoutY="27.0" text="02.45.05 pm">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1594.0" text="2021/09/15">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4783" height="1046.0" layoutY="-88.0" stroke="BLACK" strokeType="INSIDE" width="402.0" />
+                  <Label layoutX="93.0" layoutY="272.0" onMouseClicked="#goToTeacherDashBoard" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Teacher" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="95.0" layoutY="372.0" onMouseClicked="#goToEmployee" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="      Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="96.0" layoutY="483.0" onMouseClicked="#goToSystemReports" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text=" System Reports" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="98.0" layoutY="602.0" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="93.0" layoutY="175.0" onMouseClicked="#goToInformation" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView layoutX="39.0" layoutY="271.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="179.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="605.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_settings_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="487.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_text_snippet_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="41.0" layoutY="378.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="1004.0" prefWidth="1508.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="26.0" layoutY="31.0">
+         <image>
+            <Image url="@../Images/Logo1.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="145.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="50.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="157.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="161.7568359375">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="45.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

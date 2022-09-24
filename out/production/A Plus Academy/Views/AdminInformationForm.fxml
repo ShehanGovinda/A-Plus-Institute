@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminInformationForm" prefHeight="770.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminInformationFormController">
+   <children>
+      <BorderPane prefHeight="1023.0" prefWidth="1928.0">
+         <top>
+            <AnchorPane prefHeight="53.0" prefWidth="1946.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e6368" height="69.0" layoutX="402.0" stroke="#5d616600" strokeType="INSIDE" width="1544.0" />
+                  <Label fx:id="lblDate" layoutX="1672.0" prefHeight="40.0" prefWidth="155.0" text="2021/09/15">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="1656.0" layoutY="33.0" prefHeight="36.0" prefWidth="167.0" text="02.05.45 am">
+                     <font>
+                        <Font name="Century Gothic" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="1793.0" layoutY="11.0" onAction="#goToDashBoardForm" prefHeight="21.0" prefWidth="123.0" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="24.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="998.0" prefWidth="1544.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTabPane layoutX="8.0" layoutY="9.0" prefHeight="922.0" prefWidth="1536.0">
+                     <tabs>
+                        <Tab text="  Student Details  ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);">
+                                 <children>
+                                    <Text layoutX="444.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Student :" />
+                                    <JFXTextField fx:id="txtSearchStudent" layoutX="566.0" layoutY="63.0" onAction="#setDataToStudentDetailTable" prefHeight="31.0" prefWidth="460.0" style="-fx-border-color: black; -fx-border-radius: 20;" unFocusColor="#4d4d4d00" />
+                                    <TableView fx:id="tblStudentDetails" layoutX="8.0" layoutY="138.0" prefHeight="737.0" prefWidth="1505.0" stylesheets="@../Styles/TableStyles.css">
+                                      <columns>
+                                        <TableColumn fx:id="colStudentid" prefWidth="124.3333740234375" style="-fx-background-color: #2C73D2;" text="Student ID" />
+                                        <TableColumn fx:id="colStudentFirstName" prefWidth="158.666748046875" text="First Name" />
+                                          <TableColumn fx:id="colStudentlastName" prefWidth="167.0" text="Lsat Name" />
+                                          <TableColumn fx:id="colStudentDateOfBirth" prefWidth="163.000244140625" text="Date Of Birth" />
+                                          <TableColumn fx:id="colStudentGender" prefWidth="135.999755859375" text="Gender" />
+                                          <TableColumn fx:id="colStudentGrade" prefWidth="140.0" text="Grade" />
+                                          <TableColumn fx:id="colStudentParentName" prefWidth="159.0" text="Parents Name" />
+                                          <TableColumn fx:id="colStudentContact" prefWidth="169.0" text="Contact" />
+                                          <TableColumn fx:id="colStudentAddress" prefWidth="159.666748046875" text="Address" />
+                                          <TableColumn fx:id="colStudentEmail" prefWidth="135.66650390625" text="E - Mail" />
+                                      </columns>
+                                    </TableView>
+                                    <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="990.0" layoutY="61.0">
+                                       <image>
+                                          <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton layoutX="1381.0" layoutY="8.0" onMouseClicked="#goToViewReport" prefHeight="39.0" prefWidth="125.0" style="-fx-background-color: #382060; -fx-border-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" text="View Report" textFill="#ddd7d7">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="      Employee Details      ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="912.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);;">
+                                 <children>
+                                    <TableView fx:id="tblEmployeeTable" layoutX="25.0" layoutY="133.0" prefHeight="736.0" prefWidth="1476.0" stylesheets="@../Styles/TableStyles.css">
+                                      <columns>
+                                        <TableColumn fx:id="colEmployeeId" prefWidth="124.33331298828125" style="-fx-background-color: #2C73D2;" text="Employee ID" />
+                                        <TableColumn fx:id="colEmployeeFirstName" prefWidth="169.66668701171875" text="First Name" />
+                                          <TableColumn fx:id="colEmployeeLastName" prefWidth="178.33331298828125" text="Last Name" />
+                                          <TableColumn fx:id="colEmployeelNic" prefWidth="162.33331298828125" text="Nic" />
+                                          <TableColumn fx:id="colEmployeeContact" prefWidth="191.99993896484375" text="Contact" />
+                                          <TableColumn fx:id="colEmployeeEmail" prefWidth="262.00006103515625" text="E - Mail" />
+                                          <TableColumn fx:id="colEmployeeAddress" prefWidth="224.666748046875" text="Address" />
+                                          <TableColumn fx:id="colEmployeeSalary" prefWidth="164.6666259765625" style="-fx-background-color: orange;" text="Salary" />
+                                      </columns>
+                                    </TableView>
+                                    <JFXTextField fx:id="txtSearchEmployee" layoutX="630.0" layoutY="51.0" onAction="#setDataToEmployeeTable" prefHeight="31.0" prefWidth="469.0" style="-fx-border-color: black; -fx-border-radius: 20;" unFocusColor="#ffffff00" />
+                                    <Text layoutX="491.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Employee :" />
+                                    <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="1055.0" layoutY="52.0">
+                                       <image>
+                                          <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="  Teacher Details  ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);">
+                                 <children>
+                                    <Text layoutX="382.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher Details :" />
+                                    <JFXTextField fx:id="txtSearchTeacher" layoutX="510.0" layoutY="51.0" onAction="#setDataToTeacherTable" prefHeight="31.0" prefWidth="434.0" style="-fx-border-color: black; -fx-border-radius: 20;" unFocusColor="#4d4d4d00" />
+                                    <TableView fx:id="tblTeacher" layoutX="8.0" layoutY="123.0" prefHeight="751.0" prefWidth="1512.0" stylesheets="@../Styles/TableStyles.css">
+                                      <columns>
+                                        <TableColumn fx:id="colTeacherId" prefWidth="114.0" style="-fx-background-color: #2C73D2;" text="Teacher ID" />
+                                        <TableColumn fx:id="colTeacherFirstName" prefWidth="159.0" text="First Name" />
+                                          <TableColumn fx:id="colTeacherLastName" prefWidth="159.0" text="Last Name" />
+                                          <TableColumn fx:id="colTeacherNic" prefWidth="169.0" text="Nic" />
+                                          <TableColumn fx:id="colTeacherContact" prefWidth="168.0" text="Contact" />
+                                          <TableColumn fx:id="colTeacherAddress" prefWidth="202.0" text="Address" />
+                                          <TableColumn fx:id="colTeacherEmail" prefWidth="187.0" text="E - Mail" />
+                                          <TableColumn fx:id="colTeacherSubjectName" prefWidth="174.0" text="Subject Name" />
+                                          <TableColumn fx:id="colTeacherfees" prefWidth="179.0" style="-fx-background-color: orange;" text="Fee" />
+                                      </columns>
+                                    </TableView>
+                                    <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="911.0" layoutY="52.0">
+                                       <image>
+                                          <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="    Subject Details     ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(to right, #2a2629, #333033, #3c393c, #454446, #4f4e50, #525254, #555658, #585a5c, #55595a, #525758, #505656, #4e5453);">
+                                 <children>
+                                    <Text layoutX="393.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject Details :" />
+                                    <JFXTextField fx:id="txtSearchSubject" layoutX="504.0" layoutY="55.0" onAction="#setDataToSubjectTable" prefHeight="31.0" prefWidth="432.0" style="-fx-border-color: black; -fx-border-radius: 20;" unFocusColor="#4d4d4d00" />
+                                    <TableView fx:id="tblSubject" layoutX="27.0" layoutY="135.0" prefHeight="733.0" prefWidth="1453.0" stylesheets="@../Styles/TableStyles.css">
+                                      <columns>
+                                        <TableColumn fx:id="colSubjectName" prefWidth="736.33349609375" text="Subject Name" />
+                                        <TableColumn fx:id="colSubjectTeacherName" prefWidth="751.66650390625" text="Teacher Name" />
+                                      </columns>
+                                    </TableView>
+                                    <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="897.0" layoutY="54.0">
+                                       <image>
+                                          <Image url="@../Images/outline_saved_search_black_24dp.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children></AnchorPane>
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children></AnchorPane>
+         </center>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4783" height="1046.0" layoutY="-86.0" stroke="BLACK" strokeType="INSIDE" width="402.0" />
+                  <Label layoutX="88.0" layoutY="264.0" onMouseClicked="#goToTeacher" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Teacher" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="364.0" onMouseClicked="#goToEmployee" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="      Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="167.0" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView layoutX="26.0" layoutY="260.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="26.0" layoutY="168.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="28.0" layoutY="367.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+      <Text fill="WHITE" layoutX="135.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="50.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="134.0" fitWidth="107.0" layoutX="24.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Untitled-1.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="139.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="192.7568359375">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="50.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

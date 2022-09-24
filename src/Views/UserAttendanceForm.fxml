@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="UserAttendanceForm" prefHeight="1017.0" prefWidth="1881.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserAttendanceFormController">
+   <children>
+      <BorderPane prefHeight="1017.0" prefWidth="1906.0">
+         <top>
+            <AnchorPane prefHeight="42.0" prefWidth="2000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2f4768" height="69.0" layoutX="384.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1531.0" />
+                  <JFXButton layoutX="1779.0" layoutY="15.0" onAction="#goToDashBord" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="WHITE" layoutX="895.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Attendence Mark">
+                     <font>
+                        <Font name="MS Outlook" size="50.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#183a7a" height="1046.0" layoutY="-73.0" stroke="#47474700" strokeType="INSIDE" width="402.0" />
+                  <Label layoutX="98.0" layoutY="137.0" onMouseClicked="#goToDashBoardForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="104.0" layoutY="230.0" onMouseClicked="#goToStudentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Student" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="102.0" layoutY="331.0" onMouseClicked="#goToSubjectForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Subject" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="105.0" layoutY="440.0" onMouseClicked="#goToPaymentForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="      Payment" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="669.0" prefHeight="50.0" prefWidth="291.0" style="-fx-background-color: #270F4D;" text="      Attendance" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="107.0" layoutY="559.0" onMouseClicked="#goToResultForm" prefHeight="50.0" prefWidth="282.0" style="-fx-background-color: #270F4D;" text="       Results" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="31.0" layoutY="-44.0">
+                     <image>
+                        <Image url="@../Images/Logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="145.0" layoutY="-6.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="157.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER" textAlignment="CENTER" wrappingWidth="161.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="40.0" layoutY="137.0">
+                     <image>
+                        <Image url="@../Images/outline_dashboard_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="35.0" layoutY="670.0">
+                     <image>
+                        <Image url="@../Images/outline_done_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="37.0" layoutY="438.0">
+                     <image>
+                        <Image url="@../Images/outline_request_quote_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="561.0">
+                     <image>
+                        <Image url="@../Images/outline_assignment_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="39.0" layoutY="227.0">
+                     <image>
+                        <Image url="@../Images/outline_person_add_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="41.0" layoutY="331.0">
+                     <image>
+                        <Image url="@../Images/outline_import_contacts_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="136.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search : ">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <JFXTextField fx:id="txtSearchStudent" layoutX="203.0" layoutY="18.0" onAction="#searchStudentOnAction" prefHeight="31.0" prefWidth="393.0" />
+                  <JFXButton fx:id="btnMark" layoutX="1300.0" layoutY="470.0" onAction="#markAttendanceOnAction" prefHeight="31.0" prefWidth="173.0" style="-fx-background-color: #140A6B;" text="Mark" textFill="WHITE" />
+                  <ComboBox fx:id="cmbSubject" layoutX="1272.0" layoutY="397.0" prefHeight="31.0" prefWidth="209.0" promptText="Subject" />
+                  <ComboBox fx:id="cmbTeacher" layoutX="1018.0" layoutY="398.0" prefHeight="31.0" prefWidth="221.0" promptText="Teacher" />
+                  <TableView fx:id="tblStudentDetails" layoutX="23.0" layoutY="68.0" prefHeight="307.0" prefWidth="1460.0">
+                    <columns>
+                      <TableColumn fx:id="colStudentID" prefWidth="136.33334350585938" text="Student ID" />
+                      <TableColumn fx:id="colName" prefWidth="258.33331298828125" text="Name" />
+                        <TableColumn fx:id="colAddress" prefWidth="327.66668701171875" text="Address" />
+                        <TableColumn fx:id="colEmail" prefWidth="324.6666259765625" text="Email" />
+                        <TableColumn fx:id="colContact" prefWidth="231.6666259765625" text="Contact" />
+                        <TableColumn fx:id="colGrade" prefWidth="181.6666259765625" text="Grade" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="56.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Attendence : ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="txtSearchAttendance" layoutX="218.0" layoutY="473.0" onAction="#searchAttendanceOnAction" prefHeight="31.0" prefWidth="351.0" />
+                  <TableView fx:id="tblAttendance" layoutX="23.0" layoutY="543.0" prefHeight="317.0" prefWidth="1251.0">
+                    <columns>
+                      <TableColumn fx:id="colStudentID2" prefWidth="139.0" text="Student ID" />
+                      <TableColumn fx:id="colName1" prefWidth="501.0" text="Name" />
+                        <TableColumn fx:id="colGrade1" prefWidth="286.0" text="Grade" />
+                        <TableColumn fx:id="colAttendence" prefWidth="322.666748046875" text="Attendence" />
+                    </columns>
+                  </TableView>
+                  <JFXButton layoutX="1321.0" layoutY="798.0" onAction="#deleteAttendanceOnAction" prefHeight="31.0" prefWidth="155.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+                  <JFXDatePicker fx:id="dtPicker" layoutX="773.0" layoutY="397.0" onAction="#checkAttendanceInfo_OnAction" prefHeight="31.0" prefWidth="221.0" promptText="Select Date" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

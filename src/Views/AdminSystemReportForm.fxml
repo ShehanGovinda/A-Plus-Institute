@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminSystemReportForm" prefHeight="770.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminSystemReportFormController">
+   <children>
+      <BorderPane prefHeight="1023.0" prefWidth="1928.0">
+         <top>
+            <AnchorPane prefHeight="86.0" prefWidth="1929.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#334251" height="69.0" layoutX="399.0" stroke="BLACK" strokeType="INSIDE" width="1554.0" />
+                  <JFXButton layoutX="1753.0" layoutY="11.0" onAction="#goToDashBoardForm" prefHeight="45.0" prefWidth="128.0" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                     <font>
+                        <Font name="Bodoni MT" size="22.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="1595.0" layoutY="28.0" text="02.45.05 pm">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1594.0" layoutY="-1.0" text="2021/09/15">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Text fill="WHITE" layoutX="880.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Reports">
+                     <font>
+                        <Font name="Leelawadee UI" size="53.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4783" height="1046.0" layoutY="-88.0" stroke="BLACK" strokeType="INSIDE" width="402.0" />
+                  <Label layoutX="108.0" layoutY="289.0" onMouseClicked="#goToTeacher" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Teacher" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="389.0" onMouseClicked="#goToEmployee" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="      Employee" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="500.0" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text=" System Reports" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="113.0" layoutY="619.0" onMouseClicked="#goToSettings" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="        Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <Label layoutX="108.0" layoutY="192.0" onMouseClicked="#goToInformation" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);" text="    Dash Board" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="40.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <ImageView fitHeight="104.0" fitWidth="105.0" layoutX="36.0" layoutY="-63.0">
+                     <image>
+                        <Image url="@../Images/Logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="155.0" layoutY="-27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="50.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="167.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="161.7568359375">
+                     <font>
+                        <Font name="AdobeDevanagari-Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="49.0" layoutY="281.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="49.0" layoutY="189.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_info_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="49.0" layoutY="615.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_settings_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="49.0" layoutY="497.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_text_snippet_black_24dp.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="51.0" layoutY="388.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/outline_people_black_24dp.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="958.0" prefWidth="1490.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXTabPane layoutX="2.0" layoutY="7.0" prefHeight="918.0" prefWidth="1548.0">
+                     <tabs>
+                        <Tab text="                               Daily Income Report                           ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1433.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="                                         Monthly Income Report                             ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="                                                Annually Income Report                                     ">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

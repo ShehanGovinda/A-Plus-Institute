@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdminDashBoard" prefHeight="770.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashBoardFormController">
+    <BorderPane prefHeight="1023.0" prefWidth="1928.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <top>
+            <AnchorPane prefHeight="63.0" prefWidth="1928.0" BorderPane.alignment="CENTER">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e6368" height="69.0" layoutX="398.0" stroke="#ffffff00" strokeType="INSIDE" width="1529.0" />
+                    <JFXButton layoutX="1802.0" layoutY="10.0" onAction="#goToDashBoardForm" prefHeight="43.0" prefWidth="109.0" style="-fx-background-color: #0C0750; -fx-background-radius: 5; -fx-border-color: white;" text="Log Out" textFill="WHITE">
+                        <font>
+                            <Font name="Bodoni MT" size="22.0" />
+                        </font>
+                    </JFXButton>
+                </children>
+            </AnchorPane>
+        </top>
+      <left>
+         <AnchorPane prefHeight="937.0" prefWidth="345.0" BorderPane.alignment="CENTER">
+            <children>
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a4783" height="1046.0" layoutY="-86.0" stroke="TRANSPARENT" strokeType="INSIDE" width="402.0" />
+               <Label layoutX="88.0" layoutY="264.0" onMouseClicked="#goToTeacherDashBoard" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);;" text="        Teacher" textFill="WHITE">
+                  <font>
+                     <Font name="Bell MT" size="40.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor>
+               </Label>
+               <Label layoutX="90.0" layoutY="364.0" onMouseClicked="#goToEmployee" prefHeight="50.0" prefWidth="278.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);;" text="      Employee" textFill="WHITE">
+                  <font>
+                     <Font name="Bell MT" size="40.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor>
+               </Label>
+               <Label layoutX="88.0" layoutY="167.0" onMouseClicked="#goToInformation" prefHeight="50.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to right top, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b, #3b3b3b);;" text="    Dash Board" textFill="WHITE">
+                  <font>
+                     <Font name="Bell MT" size="40.0" />
+                  </font>
+                  <cursor>
+                     <Cursor fx:constant="OPEN_HAND" />
+                  </cursor>
+               </Label>
+                    <Text fill="WHITE" layoutX="125.0" layoutY="-16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SYSTEM" textAlignment="CENTER" wrappingWidth="200.7568359375">
+                        <font>
+                            <Font name="AdobeDevanagari-Bold" size="50.0" />
+                        </font>
+                    </Text>
+               <ImageView fitHeight="134.0" fitWidth="107.0" layoutX="14.0" layoutY="-55.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/Untitled-1.png" />
+                  </image>
+               </ImageView>
+               <Text fill="WHITE" layoutX="139.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN" textAlignment="CENTER" wrappingWidth="164.7568359375">
+                  <font>
+                     <Font name="AdobeDevanagari-Bold" size="50.0" />
+                  </font>
+               </Text>
+               <ImageView layoutX="26.0" layoutY="260.0" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/outline_people_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="26.0" layoutY="168.0" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/outline_info_black_24dp.png" />
+                  </image>
+               </ImageView>
+               <ImageView layoutX="28.0" layoutY="367.0" preserveRatio="true">
+                  <image>
+                     <Image url="@../Images/outline_people_black_24dp.png" />
+                  </image>
+               </ImageView>
+            </children>
+         </AnchorPane>
+      </left>
+      <center>
+         <AnchorPane prefHeight="964.0" prefWidth="1526.0" style="-fx-background-color: linear-gradient(to bottom, #e858f1, #ac5ccb, #7b579f, #564b6e, #3b3b3b);;" BorderPane.alignment="CENTER" />
+      </center>
+    </BorderPane>
+</AnchorPane>
